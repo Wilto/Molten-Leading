@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-fontface ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-fontface ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-fontface ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-fontface ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-fontface"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		 
+		<title>Untitled</title>
+		<meta name="description" content="Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus." />
+		
+		<style type="text/css" media="screen">
+			body { -webkit-text-size-adjust: none; }
+			div { 
+				width: 98%; 
+				margin: 0 auto;
+			}
+		
+			.hed  { font-size: 1.6em; }
+			.lead { font-size: 1.1em; }
+			p     { font-size: .95em; }
+
+			@media ( min-width: 600px ) {
+				.col-a {
+					width: 75%;
+					float: left;
+				}
+				.col-b {
+					width: 22%;
+					float: right;
+				}
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			<h1 class="hed">Mauris vel neque sit amet nunc gravida congue sed sit amet purus vel neque sit amet nunc gravida congue sed sit amet purus</h1>
+			
+			<p class="lead">Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec.</p>
+
+			<div class="col col-a">
+				<p>Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec.</p>
+			</div>
+			
+			<div class="col col-b">
+				<p>Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit.</p>
+			</div>
+			
+		</div>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="moltenleading.src.js"></script>
+		
+		<script>
+
+			$('.hed').moltenLeading({
+				minline: 1.2,
+				maxline: 1.4,
+				minwidth: 320,
+				maxwidth: 768
+			});
+
+			$('.lead').moltenLeading({
+				minline: 1.4,
+				maxline: 1.7
+			});
+
+			$('.col p').moltenLeading({
+				minline: 1.4,
+				maxline: 1.8,
+				minwidth: 320,
+				maxwidth: 768
+			});
+
+		</script>
+	</body>
+</html>
