@@ -1,88 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
+<!--[if lt IE 7 ]> <html lang="en" class="no-fontface ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-fontface ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-fontface ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-fontface ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-fontface"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		 
+		<title>Untitled</title>
+		<meta name="description" content="Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus." />
+		
+		<style type="text/css" media="screen">
+			body { -webkit-text-size-adjust: none; }
+			div { 
+				width: 98%; 
+				margin: 0 auto;
+			}
+		
+			.hed  { font-size: 1.6em; }
+			.lead { font-size: 1.1em; }
+			p     { font-size: .95em; }
 
-  <title>Wilto/Molten-Leading @ GitHub</title>
+			@media ( min-width: 600px ) {
+				.col-a {
+					width: 75%;
+					float: left;
+				}
+				.col-b {
+					width: 22%;
+					float: right;
+				}
+			}
+		</style>
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #ffffff;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #000000; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #000000; }
-    h3 { text-align: center; color: #000000; }
-    a { color: #000000; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
+	</head>
+	<body>
+		<div>
+			<h1 class="hed">Mauris vel neque sit amet nunc gravida congue sed sit amet purus vel neque sit amet nunc gravida congue sed sit amet purus</h1>
+			
+			<p class="lead">Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec.</p>
 
-<body>
-  <a href="https://github.com/Wilto/Molten-Leading"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+			<div class="col col-a">
+				<p>Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec.</p>
+			</div>
+			
+			<div class="col col-b">
+				<p>Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit.</p>
+			</div>
+			
+		</div>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="moltenleading.src.js"></script>
+		
+		<script>
 
-  <div id="container">
+			$('.hed').moltenLeading({
+				minline: 1.2,
+				maxline: 1.4,
+				minwidth: 320,
+				maxwidth: 768
+			});
 
-    <div class="download">
-      <a href="https://github.com/Wilto/Molten-Leading/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/Wilto/Molten-Leading/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
+			$('.lead').moltenLeading({
+				minline: 1.4,
+				maxline: 1.7
+			});
 
-    <h1><a href="https://github.com/Wilto/Molten-Leading">Molten-Leading</a>
-      <span class="small">by <a href="https://github.com/Wilto">Wilto</a></span></h1>
+			$('.col p').moltenLeading({
+				minline: 1.4,
+				maxline: 1.8,
+				minwidth: 320,
+				maxwidth: 768
+			});
 
-    <div class="description">
-      
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-      <h2>Authors</h2>
-      <p>Mat Marquis (mat@matmarquis.com)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p>Mat Marquis (mat@matmarquis.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/Wilto/Molten-Leading/zipball/master">zip</a> or
-      <a href="https://github.com/Wilto/Molten-Leading/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/Wilto/Molten-Leading</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/Wilto/Molten-Leading">Wilto/Molten-Leading</a>
-    </div>
-
-  </div>
-
-</body>
+		</script>
+	</body>
 </html>
