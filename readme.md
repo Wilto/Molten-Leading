@@ -4,3 +4,4 @@ Manually adjusting ```line-height``` for optimum readability across a bunch of m
 ## Notes:
 * Binding to ```resize``` makes me nauseous to begin with, and in this first pass I’m going about it in a particularly gross way.
 * There’s a demo <a href="http://wilto.github.com/Molten-Leading/">right hurr</a>.
+* Full credit to <a href="http://twitter.com/nicewebtype">Tim Brown</a> for <a href="http://nicewebtype.com/notes/2012/02/03/molten-leading-or-fluid-line-height/">the post</a> that got my lazy ass in gear on this, and the awesome name.
