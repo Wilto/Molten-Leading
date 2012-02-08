@@ -1,6 +1,6 @@
 (function($) {
 	$.fn.moltenLeading = function( config ) {
-		var o = $.extend({
+		var o = $.extend( {
 				minline: 1.2,
 				maxline: 1.6,
 				minwidth: 320,
@@ -19,7 +19,7 @@
 
 				$el.css( "lineHeight", linecalc );
 
-				$(window).one( "resize", function() {
+				$( window ).one( "resize", function() {
 					hotlead( $el );
 				});
 			};
